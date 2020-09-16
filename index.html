@@ -9,32 +9,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="postcard">
-        <div class="header">
-            <div class="title">
-                <h1>My Postcard</h1>
+    <div class="postcard">
+        <div class="postcard-header">
+            <div class="postcard-title">
+                <h1 class="title">My Postcard</h1>
             </div>
-            <div class="image">
+            <div class="postcard-image">
                 <img src="http://assets.breatheco.de/apis/img/icon/4geeks.png" alt="Logo" />
             </div>
         </div>
-        <div class="body">
-            <div class="content">
+        <div class="postcard-body">
+            <div class="postcard-content">
                 <p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
                 <p>This is so cool, can't wait to start doing more stuff!</p>
             </div>
 
-            <div class="form">
-                <input type="text" id="name" name="name" class="input" placeholder="Some Name"/>
-                <input type="email" id="email" name="email" class="input" placeholder="Some Email"/>
-                <textarea id="comment" name="comment" class="textarea" placeholder="Some Comment"></textarea>
+            <div class="postcard-form">
+                <div class="field">
+                    <input type="text" id="name" name="name" class="input" placeholder="Some Name"/>
+                </div>
+
+                <div class="field">
+                    <input type="email" id="email" name="email" class="input" placeholder="Some Email"/>
+                </div>
+                
+                <div class="field">
+                    <textarea id="comment" name="comment" class="textarea" placeholder="Some Comment"></textarea>
+                </div>
             </div>
         </div>
-        
-        <div class="footer">
+
+        <div class="postcard-footer">
             <button class="button" type="button">Send My Postcard</button>    
         </div>
     </div>
-  
 </body>
 </html>
